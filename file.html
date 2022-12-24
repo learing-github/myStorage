@@ -2,18 +2,32 @@
 <html>
    <head>
       <title>NewFile</title>
+       <style>
+           .head {
+               color: blue;
+               background-color: red;
+               font-size: 20px;
+               font-weight: bold;
+               
+           }
+           td:not(.head) {
+               background-color: blue;
+               color: red;
+           }
+       </style>
    </head>
    <body>
 
        <h2>Some text</h2>
 
       <h3>Some text</h3>
+       <div id="stl">
        <table border="3px" padding="4px" margin="40px">
           <tr>
-             <td>id</td>
-              <td>name</td>
-              <td>Last name</td>
-              <td>age</td>
+             <td class="head">id</td>
+              <td class="head">name</td>
+              <td class="head">Last name</td>
+              <td class="head">age</td>
            </tr>
            <tr>
               <td>2</td>
@@ -28,7 +42,7 @@
                <td>34</td>
            </tr>
        </table>
-        
+        </div>
        <h1 style="color: blue">Hello world@!</h1>
        
    </body>
